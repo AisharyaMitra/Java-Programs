@@ -1,0 +1,28 @@
+package testcase;
+
+public class Final1{
+	final void roi() {
+		System.out.println(" Rate of interest is 5");
+	}
+	public void fd() {
+		System.out.println(" Rate of interest is 10");
+	}
+}
+	class BankName extends Final1{
+//		final void roi() {
+//			System.out.println(" Rate of interest is 15");
+//		}
+		public void fd() {
+			System.out.println(" Rate of interest is 5");
+		}
+	}
+		public class FinalKeyword{
+
+	public static void main(String[] args) {
+		Final1 b = new BankName();
+		b.fd();
+
+	}
+	
+
+}
